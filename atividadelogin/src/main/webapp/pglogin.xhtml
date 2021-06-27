@@ -1,0 +1,31 @@
+<html xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+<title> Login </title>
+
+</h:head>
+
+<h:body>
+
+<h:form>
+
+<h:panelGrid columns="2">
+
+<h:outputLabel value="Login: "/>
+
+<h:inputText value="#{loginControle.usuario}"/>
+
+<h:outputLabel value="Senha: "/>
+
+<h:inputSecret value="#{loginControle.senha}"/>
+
+<h:commandButton action="#{loginControle.validarAcesso()}" value="Autenticar"/>
+
+</h:panelGrid>
+
+</h:form>
+
+</h:body>
+
+</html>
